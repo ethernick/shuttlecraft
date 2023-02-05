@@ -206,6 +206,11 @@ header.back a {
   margin-right: 0.25em;
 }
 
+.activity footer a.permalink {
+  border-bottom-width: 1px !important;
+  float: right;
+}
+
 
 .follow_box {
     display:none;

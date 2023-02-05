@@ -34,17 +34,17 @@
                 <div class="tools">
                     {{#if stats}}
                         <div>
-                            ↩️ {{ stats.replies }}
+                            {{ stats.replies }} replies
                         </div>
                         <div>
-                            🔁 {{ stats.boosts }}
+                            {{ stats.boosts }} boosts
                         </div>
                         <div>
-                            ⭐️ {{ stats.likes }}
+                            {{ stats.likes }} likes
                         </div>
                     {{/if}}
+                    <a href="{{note.url}}" class="permalink">{{timesince note.published}}</a>
                 </div>
-                <a href="{{note.url}}" class="permalink">{{timesince note.published}}</a>
             </footer>
         </div>
     {{/with}}
