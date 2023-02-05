@@ -193,6 +193,13 @@ header.back a {
   font-size: 1.1em;
   margin-bottom: 1.1em;
 }
+.activity .content a.showThread {
+  font-size: 0.7em;
+  border-right: 6px solid var(--color-primary);
+  padding: 8px;
+  
+
+}
 
 .activity footer {
   font-size: 0.65em;
