@@ -73,7 +73,7 @@ h1 {
   color: #0066ff /*#2800FF*/;
 }
 @media only screen and (max-width: 600px) {
-  h1 { font-size: 14vw; }
+  h1 { font-size: 12vw; }
 }
 
 h2 {
@@ -110,6 +110,7 @@ input.copyme {
   border: none;
   border-bottom: 3px solid var(--color-primary);
   padding: 4px 8px;
+  width: 15em;
 }
 
 input.copyme:focus {
@@ -130,9 +131,16 @@ a.blogLink {
   display: block;
   border-bottom: 2px solid #ff990088 !important;
   margin-bottom: 1.5em;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
+a.blogLink:before {
+  content: "< ";
+}
+
 a.blogLink:hover {
-  
+  background: #ff990088;
 }
 
 .stream a:hover {
