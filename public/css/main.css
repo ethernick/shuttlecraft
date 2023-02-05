@@ -136,17 +136,26 @@ input.copyme:focus {
     text-overflow: ellipsis;
 }
 
+header.back a {
+  width: 100%;
+  display: inline-block;
+  border-bottom-width: 2px !important;
+  padding: 8px;
+  font-weight: bold;
+}
+
 .activity {
     border-bottom: 4px dotted #0099ff11;
     background: #FFF;
     padding: 2rem 0;
 }
 
-
 .activity .header {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    background-color: #09f1;
+    padding: 1em;
 }
 
 .activity .header .avatar {
@@ -158,8 +167,17 @@ input.copyme:focus {
     max-width: 100%;
 }
 
+.activity .content {
+  font-size: 1.2em;
+  margin: 1em;
+}
+.activity .content p {
+  font-size: 1.1em;
+  margin-bottom: 1.1em;
+}
+
 .activity footer {
-  font-size: 0.75em;
+  font-size: 0.65em;
 }
 
 .activity footer .tools {
