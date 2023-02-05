@@ -124,10 +124,20 @@ input.copyme:focus {
   color: var(--foreground);
   transition: background 0.2s linear;
 }
+
+a.blogLink {
+  padding: 8px;
+  display: block;
+  border-bottom: 2px solid #ff990088 !important;
+  margin-bottom: 1.5em;
+}
+a.blogLink:hover {
+  
+}
+
 .stream a:hover {
   background: var(--color-primary);
 }
-
 
 .stream {
     /*max-width: 800px;*/
