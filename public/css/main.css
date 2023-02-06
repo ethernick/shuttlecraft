@@ -188,6 +188,7 @@ header.back a {
 .activity .content {
   font-size: 1.2em;
   margin: 1em;
+  white-space: pre-line;
 }
 .activity .content p {
   font-size: 1.1em;
