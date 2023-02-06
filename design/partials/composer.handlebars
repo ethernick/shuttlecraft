@@ -3,7 +3,7 @@
         <Header>Reply</Header>
         <div class="activity">
             {{> byline actor=actor}}
-            {{{originalPost.content}}}
+          <span class="content">{{{originalPost.content}}}</span>
         </div>
     {{else}}
         {{#if prev}}
