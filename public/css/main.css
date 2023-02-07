@@ -184,6 +184,13 @@ header.back a {
 .activity .attachment img {
     max-width: 100%;
 }
+.activity .content_warning{
+  padding: 30px;
+  border: 6px #ffef00 solid;
+  background-color: #ff01;
+  color: #0010ff;
+  
+}
 
 .activity .content {
   font-size: 1.2em;

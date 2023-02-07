@@ -45,10 +45,10 @@
     {{#each activitystream}}
         <div class="activity">
             {{#with this}}
+                {{#if summary}}
+          <div class="content_warning"><b>Warning</b>: {{summary}}</div>
+                {{/if}}
                 <div class="content">
-                    {{#if summary}}
-                    content warning: {{summary}}
-                    {{/if}}
                     {{{content}}}
 
                     {{#if this.inReplyTo}}
