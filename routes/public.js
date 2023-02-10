@@ -113,6 +113,7 @@ router.get('/', async (req, res) => {
     activitystream: posts,
     layout: 'public',
     next: offset + posts.length,
+    //back: posts.length,
     domain: DOMAIN,
     user: USERNAME
   });
