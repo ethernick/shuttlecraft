@@ -38,17 +38,17 @@
             {{/if}}
         </div>
     </div>
-    <header>
-        <span>🏠 Latest</span>
+    <h3>
+        <span>Latest</span>
         <a href="/private" id="newPosts" class="unread" hidden></a>
-    </header>
+    </h3>
     {{#each activitystream}}
         <div class="activity">
             {{#with this}}
+                {{#if summary}}
+          <div class="content_warning"><b>Warning</b>: {{summary}}</div>
+                {{/if}}
                 <div class="content">
-                    {{#if summary}}
-                    content warning: {{summary}}
-                    {{/if}}
                     {{{content}}}
 
                     {{#if this.inReplyTo}}
@@ -67,6 +67,11 @@
                     {{/each}}
 
                     <footer>
+<<<<<<< HEAD
+=======
+                        {{#if false}}
+                        {{/if}}
+>>>>>>> master
                         <div class="tools">
                             {{#if stats}}
                             <div>
@@ -86,5 +91,9 @@
             {{/with}}
         </div>
     {{/each}}
+<<<<<<< HEAD
+=======
+    <a href="/?offset={{prev}}"  class="moreLink">Back</a> | 
+>>>>>>> master
     <a href="/?offset={{next}}"  class="moreLink">More</a>
 </div>

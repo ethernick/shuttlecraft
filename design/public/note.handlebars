@@ -1,13 +1,6 @@
 <div class="stream">
-    <div class="follow_box">
-        <p>
-            Follow this site on Mastodon or other fediverse clients: 
-            <input type="text" value="{{user}}@{{domain}}" size="50"/>
-        </p>
-    </div>
 <header class="back">
-    <a  href="#" onclick="history.back(); return false;"><img src="{{actor.icon.url}}" class="avatar"></a>
-    <a href="#" onclick="history.back(); return false;">Back to {{actor.preferredUsername}}</a>
+    <a href="#" onclick="history.back(); return false;">&lt; back</a>
 </header>
 {{#each activitystream}}
 <div class="activity">
@@ -41,6 +34,7 @@
                 <div class="tools">
                     {{#if stats}}
                         <div>
+<<<<<<< HEAD
                             ↩️ {{ stats.replies }}
                         </div>
                         <div>
@@ -52,6 +46,19 @@
                     {{/if}}
                 </div>
                 <a href="{{note.url}}" class="permalink">{{timesince note.published}}</a>
+=======
+                            {{ stats.replies }} replies
+                        </div>
+                        <div>
+                            {{ stats.boosts }} boosts
+                        </div>
+                        <div>
+                            {{ stats.likes }} likes
+                        </div>
+                    {{/if}}
+                    <a href="{{note.url}}" class="permalink">{{timesince note.published}}</a>
+                </div>
+>>>>>>> master
             </footer>
         </div>
     {{/with}}

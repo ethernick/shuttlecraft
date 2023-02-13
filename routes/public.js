@@ -113,6 +113,7 @@ router.get('/', async (req, res) => {
     activitystream: posts,
     layout: 'public',
     next: offset + posts.length,
+    prev: (offset - Math.ceil(posts.length / 10) * 10 < 0)?0:offset - Math.ceil(posts.length / 10) * 10,
     domain: DOMAIN,
     user: USERNAME
   });
